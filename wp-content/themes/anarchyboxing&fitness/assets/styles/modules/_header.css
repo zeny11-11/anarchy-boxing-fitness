@@ -1,0 +1,141 @@
+.header{
+  width:100%;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding-top: 40px ;
+  color: #000;
+  box-sizing: border-box;
+  position: relative;
+}
+.logo{
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 0; 
+ 
+}
+
+
+.nav-menu{
+  list-style: none;
+  text-align: center;
+  padding: 50px;
+/*  border: thin solid green;*/
+}
+
+.nav-menu li {
+	display: inline-block;
+}
+.nav-menu a{
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 20px;
+  transition: 0.4s;
+}
+.show-menu-btn,.hide-menu-btn{
+  transition: 0.8s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.show-menu-btn{
+	height: 50px;
+	width: 50px;
+	border: 3px solid #ba1a1f;
+	text-align: center;
+}
+.show-menu-btn i{
+  line-height: 45px;
+  color:#ba1a1f;
+}
+
+.nav-menu a:hover {
+	background-color: #ba1a1f;
+	color: #fff;
+	padding: 10px 20px;
+	}
+
+/*.nav-menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover{
+  color: #3498db;
+}*/
+
+#chk{
+  position: absolute;
+	top: 30px;
+	left: 20px;
+	line-height: 50px;
+    visibility: hidden;
+    z-index: -1111;
+/*	border: thin solid black;*/
+}
+
+
+@media screen and (max-width:800px) {
+.header {
+	padding: 20px;
+	
+	}
+	.logo a img {
+	max-width: 100%;
+		
+	}
+
+.nav-bar {
+	position: absolute;
+	top: 50px;
+	left: 0;
+    width: 100%;
+	z-index: 1000;
+	padding: 5px 15px;
+}
+	
+.show-menu-btn,.hide-menu-btn{
+    display: block;
+ }
+	
+.menu-main-header-menu-container {
+	position: fixed;
+	text-align: center;
+	padding: 80px 0;
+    line-height: normal;
+	width: 0;
+    height: 100vh;
+    background: #ba1a1f;
+    right: -100%;
+	max-width: 0;
+    top: 0;
+    transition: 0.7s;
+	}
+	
+  .nav-menu li {
+	display: block;
+	}
+	
+ .nav-menu a {
+    display: block;
+    padding: 20px;
+	 color: #fff;
+	 
+  }
+  .hide-menu-btn{
+    position: absolute;
+    top: 0px;
+    right: -50px;
+  }
+  #chk:checked ~ .menu-main-header-menu-container{
+    right: 0;
+	width: 100%;
+	max-width: 100%;
+
+  }
+	
+	#chk:checked ~ .hide-menu-btn{
+    right: 50px;
+		color: white;
+  }
+}

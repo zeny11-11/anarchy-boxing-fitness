@@ -1,0 +1,28 @@
+h1 {
+	font-family: 'Montserrat', sans-serif !important;
+	letter-spacing: 1px;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif !important;
+	letter-spacing: 1px;
+}
+
+p {
+	line-height: 1.75em;
+	letter-spacing: 1px;
+	font-family: 'Merriweather', serif;
+	
+}
+
+a {
+	font-family: 'Montserrat', sans-serif !important;
+	
+}
+
+.page-wrapper {
+	width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+
+}
